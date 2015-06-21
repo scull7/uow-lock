@@ -6,3 +6,4 @@ node_js:
   - "iojs"
 after_scripts:
   - "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  - "CODECLIMATE_REPO_TOKEN=3e0b0d6464551161ecc3ec0fefaa10640a7dfb4ab0beedc48bf9b781d40a9013 ./node_modules/.bin/codeclimate < ./coverage/lcov.info"
