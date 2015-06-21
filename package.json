@@ -4,7 +4,7 @@
   "description": "A locking mechanism designed for the UOW Queue",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec"
   },
   "jscsConfig": {
     "validateIndentation": 2,
